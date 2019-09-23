@@ -11,7 +11,7 @@ const nexmo = new Nexmo({
 });
 
 const from = "Nexmo";
-const to = "918428223383";
+const to = "YOUR NUMBER";
 const text = "Hi..This is Ajay";
 
 app = express();
@@ -36,8 +36,8 @@ cron.schedule("* * * * * *", function() {
 // let transporter = nodemailer.createTransport({
 //     service: "gmail",
 //     auth: {
-//       user: "ajay.krishnan@augustahitech.com",
-//       pass: "ajay@1613002"
+//       user: "mailto",
+//       pass: "pwd"
 //     }
 //   });
 
@@ -46,8 +46,8 @@ cron.schedule("* * * * * *", function() {
 //     console.log("---------------------");
 //     console.log("Running Cron Job");
 //     let mailOptions = {
-//       from: "ajay.krishnan@augustahitech.com",
-//       to: "hari25cena@gmail.com",
+//       from: "from mail",
+//       to: "tomail",
 //       subject: `Crone Job ;)`,
 //       text: `Hi there, this email was automatically sent by ajay`
 //     };
