@@ -6,8 +6,8 @@ let nodemailer = require("nodemailer");
 const Nexmo = require("nexmo");
 
 const nexmo = new Nexmo({
-  apiKey: "fba994e6",  
-  apiSecret: "CpNWQSHQs5AwiHV1"
+  apiKey: "YOUR API KEY",  
+  apiSecret: "API SECRET KEY"
 });
 
 const from = "Nexmo";
@@ -19,7 +19,7 @@ var i=0;
 console.log("Message Sent");
 cron.schedule("* * * * * *", function() {
   nexmo.message.sendSms(from, to, text);
-  console.log(i+1);
+  console.log("SMS SENT "+i+1);
   i+=1;
 });
 
